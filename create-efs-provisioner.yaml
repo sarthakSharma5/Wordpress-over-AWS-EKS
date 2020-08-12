@@ -19,16 +19,16 @@ spec:
           image: quay.io/external_storage/efs-provisioner:v0.1.0
           env:
             - name: FILE_SYSTEM_ID
-              value: fs-9a9d0f4b
+              value: <given by AWS>                                    # eg, fs-9a9d0f4b
             - name: AWS_REGION
-              value: ap-south-1
+              value: <select as accordingly>                           # eg, ap-south-1
             - name: PROVISIONER_NAME
-              value: eks-task/aws-efs
+              value: <File_System name used>                           # eg, eks-task/aws-efs
           volumeMounts:
             - name: pv-volume
               mountPath: /persistentvolumes
       volumes:
         - name: pv-volume
           nfs:
-            server: fs-9a9d0f4b.efs.ap-south-1.amazonaws.com
+            server: <file_system_id>.efs.<aws_region>.amazonaws.com    # same as above
             path: /
