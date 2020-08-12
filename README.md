@@ -13,7 +13,7 @@ values for some key-value pairs have been commented using "#"
 use appropriate values before using them provided and/or used w.r.t. AWS Cloud
 a few pre-requisites before using the same:
 1. keep a AWS key ready to be used to login to nodes
-2. kubectl and eksctl programs on local host are must
+2. kubectl and eksctl programs pre-installed on local host
 
 To create a cluster for other general purpose use cluster.yaml file
 command: eksctl create cluster -f cluster.yaml
