@@ -11,7 +11,7 @@ The following program files need to be updated accordingly:
 Values for some key-value pairs have been commented using "#"
 Use appropriate values before using them provided and/or used w.r.t. AWS Cloud
 
-Afew pre-requisites before using the same:
+A few pre-requisites before using the same:
 1. keep an AWS key ready to be used to login to nodes.
 2. kubectl and eksctl programs pre-installed on local host.
 
