@@ -6,7 +6,7 @@ metadata:
 subjects:
   - kind: ServiceAccount
     name: default
-    namespace: myeksns
+    namespace: <namespace used in kubernetes>       # eg, myeksns
 roleRef:
   kind: ClusterRole
   name: cluster-admin
