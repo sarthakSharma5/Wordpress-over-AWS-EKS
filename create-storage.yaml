@@ -2,7 +2,7 @@ kind: StorageClass
 apiVersion: storage.k8s.io/v1
 metadata:
   name: aws-efs
-provisioner: eks-task/aws-efs
+provisioner: # < File_System name used in create-efs-provisioner.yaml eg, eks-task/aws-efs >
 ---
 kind: PersistentVolumeClaim
 apiVersion: v1
